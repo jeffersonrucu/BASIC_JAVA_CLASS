@@ -20,6 +20,8 @@ public class Main {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
+        System.out.printf("Valor da area X: %f\n", x.area());
+        System.out.printf("Valor da area X: %f\n", y.area());
         sc.close();
     }
 }

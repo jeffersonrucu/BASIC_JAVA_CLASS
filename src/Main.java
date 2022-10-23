@@ -8,20 +8,20 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Triangle x, y;
-        x = new Triangle();
-        y = new Triangle();
+        double a,b,c;
 
-        x.a = sc.nextDouble();
-        x.b = sc.nextDouble();
-        x.c = sc.nextDouble();
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        Triangle x = new Triangle(a, b, c);
 
-        y.a = sc.nextDouble();
-        y.b = sc.nextDouble();
-        y.c = sc.nextDouble();
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        Triangle y = new Triangle(a, b, c);
 
         System.out.printf("Valor da area X: %f\n", x.area());
-        System.out.printf("Valor da area X: %f\n", y.area());
+        System.out.printf("Valor da area Y: %f\n", y.area());
         sc.close();
     }
 }
